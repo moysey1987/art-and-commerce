@@ -219,7 +219,7 @@ div.divider {
     margin-bottom: 80px;
     transform: scaleX(0);
     transform-origin: left;
-    transition: transform 2s ease;
+    transition: transform 1s ease-in-out;
 }
 
 div.divider.grow {
@@ -577,7 +577,7 @@ FOOTER
 
 footer {
     padding: 48px 24px;
-    background-image: url("/images/background.webp");
+    background-image: url("/images/footer.webp");
     background-size: cover;
     background-position: center;
     display: flex;

@@ -83,7 +83,7 @@ contactButton.addEventListener("click", function() {
     modalContainer.style.pointerEvents = "auto"
 })
 
-modalContainer.addEventListener("click", function() {
+modalClose.addEventListener("click", function() {
     modalContainer.style.opacity = "0"
     modalContainer.style.pointerEvents = "none"
 })
