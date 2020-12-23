@@ -217,6 +217,13 @@ div.divider {
     height: 2px;
     background-color: var(--dark);
     margin-bottom: 80px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 2s ease;
+}
+
+div.divider.grow {
+    transform: scale(1);
 }
 
 div.work-section-intro h2::before {

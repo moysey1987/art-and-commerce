@@ -16,6 +16,8 @@ const contactButton = document.querySelector("a.contact-button")
 const modalContainer = document.querySelector("div.modal-container")
 const modalClose = document.querySelector("div.modal img")
 
+const growers = document.querySelectorAll("div.divider")
+
 // SMOOTH SCROLLING
 
 anchors.forEach(anchor => {
@@ -84,4 +86,27 @@ contactButton.addEventListener("click", function() {
 modalContainer.addEventListener("click", function() {
     modalContainer.style.opacity = "0"
     modalContainer.style.pointerEvents = "none"
+})
+
+// GROWING DIVIDER LINES
+const growOptions = {
+    threshold: 1
+}
+const growOnScroll = new IntersectionObserver(function(
+        entries,
+        growOnScroll
+    ) {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                return
+            } else {
+                entry.target.classList.add('grow')
+                growOnScroll.unobserve(entry.target)
+            }
+        });
+    },
+    growOptions)
+
+growers.forEach(grower => {
+    growOnScroll.observe(grower)
 })
