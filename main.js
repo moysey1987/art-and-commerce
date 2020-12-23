@@ -12,8 +12,9 @@ const serviceThreeDescription = document.querySelector("div.s3-description")
 const serviceFourTag = document.querySelector("div.service-four")
 const serviceFourDescription = document.querySelector("div.s4-description")
 
-
-
+const contactButton = document.querySelector("a.contact-button")
+const modalContainer = document.querySelector("div.modal-container")
+const modalClose = document.querySelector("div.modal img")
 
 // SMOOTH SCROLLING
 
@@ -71,4 +72,16 @@ serviceFourTag.addEventListener("mouseover", function() {
 })
 serviceFourTag.addEventListener("mouseleave", function() {
     serviceFourDescription.style.opacity = "0"
+})
+
+// MODAL LAUNCHER
+
+contactButton.addEventListener("click", function() {
+    modalContainer.style.opacity = "1"
+    modalContainer.style.pointerEvents = "auto"
+})
+
+modalContainer.addEventListener("click", function() {
+    modalContainer.style.opacity = "0"
+    modalContainer.style.pointerEvents = "none"
 })
