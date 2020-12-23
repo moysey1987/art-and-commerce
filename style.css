@@ -94,7 +94,8 @@ HERO
 */
 
 section.hero {
-    margin: 114px 24px;
+    margin: 114px 0px;
+    padding: 0px 24px;
     max-height: 800px;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
@@ -161,7 +162,7 @@ INTRO TEXT
 */
 
 div.intro-text-container {
-    margin: 160px 0px 144px 0px;
+    margin: 160px 0px 352px 0px;
     padding: 0px 24px;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
@@ -175,18 +176,110 @@ div.intro-text {
 
 /*
 *****************************************
+SECTION HEADINGS
+*****************************************
+*/
+
+h2 {
+    font-size: 67px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 32px;
+}
+
+div.divider {
+    height: 2px;
+    background-color: var(--dark);
+    margin-bottom: 80px;
+}
+
+div.work-section-intro h2::before {
+    content: "Work";
+    font-size: 309px;
+    position: absolute;
+    bottom: 0px;
+    left: -24px;
+    color: #33333313;
+}
+
+div.services-section-intro h2::before {
+    content: "Services";
+    font-size: 309px;
+    position: absolute;
+    bottom: 0px;
+    left: -24px;
+    color: #3333330c;
+}
+
+div.about-section-intro h2::before {
+    content: "About";
+    font-size: 309px;
+    position: absolute;
+    bottom: 0px;
+    left: -24px;
+    color: #3333330c;
+}
+
+div.contact-section-intro h2::before {
+    content: "Contact";
+    font-size: 309px;
+    position: absolute;
+    bottom: 0px;
+    left: -24px;
+    color: #3333330c;
+}
+
+
+/*
+*****************************************
 WORK
 *****************************************
 */
+
+section.work {
+    width: 100%;
+    padding: 0px 24px;
+}
+
+div.project-one {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+}
+
+div.project-title {
+    grid-column: 1 / span 2;
+}
+
+div.project-title h3 {
+    font-size: 67px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+div.project-link a {
+    display: flex;
+    justify-content: space-between;
+    font-size: 41px;
+    width: 100%;
+}
+
+div.project-link img {
+    display: inline-block;
+}
+
+div.project-one-description {
+    grid-column: 8 / span 2;
+    align-self: flex-end;
+}
 
 video {
     max-width: 100%;
 }
 
 div.project-one-video {
-    max-width: 2512px;
-    margin-left: 24px;
-    margin-right: 24px;
+    grid-column: 1 / span 9;
+    margin: 32px 0 144px 0;
 }
 
 
