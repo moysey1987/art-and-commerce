@@ -1,4 +1,14 @@
+// Variables
 const anchors = document.querySelectorAll("header nav a")
+
+
+
+
+
+
+
+
+// SMOOTH SCROLLING
 
 anchors.forEach(anchor => {
     anchor.addEventListener('click', event => {
