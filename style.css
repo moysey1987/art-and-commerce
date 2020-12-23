@@ -27,7 +27,6 @@ header {
     left: 0;
     z-index: 10;
     background-color: var(--light);
-    box-shadow: 0px 2px 8px #3333332f;
 }
 
 header img {
@@ -96,7 +95,6 @@ HERO
 
 section.hero {
     margin: 114px 24px;
-    width: 100%;
     max-height: 800px;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
@@ -153,6 +151,25 @@ div.logomark {
 
 div.logomark img {
     max-width: 260px;
+}
+
+
+/*
+*****************************************
+INTRO TEXT
+*****************************************
+*/
+
+div.intro-text-container {
+    margin: 160px 0px 144px 0px;
+    padding: 0px 24px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+}
+
+div.intro-text {
+    grid-column: 3 / span 6;
+    font-size: 41px;
 }
 
 
