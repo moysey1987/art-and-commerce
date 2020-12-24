@@ -12,6 +12,7 @@ body {
     color: var(--dark);
     font-size: 16px;
     line-height: 1.5;
+    cursor: url("images/cursor.svg"), auto;
 }
 
 p {
@@ -20,12 +21,12 @@ p {
 
 ::-webkit-scrollbar {
     width: 12px;
-    background-image: linear-gradient(100deg, #ffffff, #DAB9DB, #1B52CF, #E3AADF, #ffffff);
+    background-image: linear-gradient(100deg, #ffffff, #DAB9DB, #5A9FDB, #E3AADF, #ffffff);
 }
 
  ::-webkit-scrollbar-thumb {
     background-color: var(--light);
-    border: 1px solid var(--dark);
+    border: 1px solid var(--dark20);
 }
 
 
@@ -63,7 +64,7 @@ a {
     position: relative;
 }
 
-a.fancy-link::after {
+.fancy-link::after {
     position: absolute;
     content: "";
     left: 0;
@@ -76,7 +77,7 @@ a.fancy-link::after {
     transition: transform 0.25s ease;
 }
 
-a.fancy-link:hover::after {
+.fancy-link:hover::after {
     transform: scaleX(1);
     transform-origin: left;
 }
@@ -414,7 +415,6 @@ div.service {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    cursor: pointer;
     margin-bottom: 32px;
 }
 
@@ -623,6 +623,12 @@ div.modal-container {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.25s ease;
+}
+
+div.modal-background {
+    padding: 16px;
+    background-image: url("images/background.webp");
+    background-size: cover;
 }
 
 div.modal {
