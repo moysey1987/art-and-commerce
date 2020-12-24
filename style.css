@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 :root {
     --dark: #333333;
+    --dark20: #D6D6D6;
     --light: #ffffff;
 }
 
@@ -15,6 +16,16 @@ body {
 
 p {
     margin-bottom: 16px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-image: linear-gradient(100deg, #ffffff, #DAB9DB, #1B52CF, #E3AADF, #ffffff);
+}
+
+ ::-webkit-scrollbar-thumb {
+    background-color: var(--light);
+    border: 1px solid var(--dark);
 }
 
 
@@ -601,7 +612,7 @@ CONTACT MODAL
 div.modal-container {
     width: 100%;
     height: 100vh;
-    background-color: #3333339d;
+    background-color: #333333b2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -625,7 +636,7 @@ div.modal img {
     position: absolute;
     top: 32px;
     right: 32px;
-    transition: transform 1s ease;
+    transition: transform 0.5s ease;
     cursor: pointer;
 }
 
