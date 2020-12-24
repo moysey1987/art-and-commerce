@@ -18,6 +18,66 @@ const modalClose = document.querySelector("div.modal img")
 
 const growers = document.querySelectorAll("div.divider")
 
+
+// PAGE LOAD ANIMATION
+
+anime.timeline()
+    .add({
+        targets: '.hero-text h1, .logomark',
+        translateY: [100, 0],
+        translateZ: 0,
+        opacity: [0, 1],
+        easing: "easeOutExpo",
+        duration: 1500,
+        delay: 2100
+    });
+anime.timeline()
+    .add({
+        targets: '.hero-text ul, .location-subtitle',
+        translateY: [150, 0],
+        translateZ: 0,
+        opacity: [0, 1],
+        easing: "easeOutExpo",
+        duration: 1500,
+        delay: 2500
+    });
+
+anime.timeline()
+    .add({
+        targets: '.intro-text',
+        translateX: [-150, 0],
+        translateZ: 0,
+        opacity: [0, 1],
+        easing: "easeOutExpo",
+        duration: 1500,
+        delay: 2500
+    });
+
+TweenMax.to(".loader-wrapper", 1.5, {
+    top: "-100%",
+    ease: Expo.easeInOut,
+    delay: 1
+});
+
+var tl = new TimelineMax();
+
+tl.from(".loader", 2, {
+    rotate: "-360deg",
+    ease: Expo.easeInOut,
+});
+
+tl.to(".loader", 1.5, {
+    top: "-100%",
+    ease: Expo.easeInOut
+}, 1);
+
+TweenMax.to(".box", 1, {
+    scaleY: "0",
+    transformOrigin: "0% 0%",
+    ease: Expo.easeInOut,
+    delay: 1.5
+});
+
 // SMOOTH SCROLLING
 
 anchors.forEach(anchor => {

@@ -7,6 +7,7 @@
     <link rel="icon" href="/images/favicon.png">
     <link rel="stylesheet" href="_base.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <title>Art + Commerce | Design and Development | Melbourne</title>
 </head>
 
@@ -16,7 +17,7 @@
 LOAD SCREEN
 *****************************************
 -->
-    <div class="wrapper">
+    <div class="loader-wrapper">
         <div class="loader"></div>
     </div>
 
@@ -45,6 +46,7 @@ HERO
     <section class="hero" id="top">
 
         <div class="hero-image-container">
+            <div class="box"></div>
             <div class="hero-image">
 
             </div>
@@ -81,7 +83,9 @@ INTRO TEXT
         <div class="intro-text">
             <p>Aesthetic + economic. Beauty + utility. Passion + profit. Art + Commerce. We marry modern digital design with a deep understanding of your freelance or small business’ needs to make websites that look great and get results.</p>
         </div>
+        <div id="work"></div>
     </div>
+
 
     <!-- 
 *****************************************
@@ -89,7 +93,7 @@ WORK
 *****************************************
 -->
 
-    <section class="work" id="work">
+    <section class="work">
 
         <div class="work-section-intro">
             <h2>Work</h2>
@@ -144,7 +148,7 @@ DIVIDER
 *****************************************
 -->
 
-    <div class="image-divider-container">
+    <div class="image-divider-container" id="services">
     </div>
 
     <!-- 
@@ -153,7 +157,7 @@ SERVICES
 *****************************************
 -->
 
-    <section class="services" id="services">
+    <section class="services">
 
         <div class="services-section-intro">
             <h2>Services</h2>
@@ -222,7 +226,7 @@ DIVIDER
 *****************************************
 -->
 
-    <div class="image-divider-container">
+    <div class="image-divider-container" id="about">
     </div>
 
     <!-- 
@@ -231,7 +235,7 @@ ABOUT
 *****************************************
 -->
 
-    <section class="about" id="about">
+    <section class="about">
 
         <div class="about-section-intro">
             <h2>About</h2>
@@ -270,7 +274,7 @@ CONTACT
 *****************************************
 -->
 
-    <section class="contact" id="contact">
+    <section class="contact">
 
         <div class="contact-section-intro">
             <h2>Contact</h2>
@@ -343,6 +347,7 @@ FOOTER
         </div>
     </div>
 
+    <script src="anime.min.js"></script>
     <script src="main.js"></script>
 
 </body>
