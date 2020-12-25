@@ -445,7 +445,7 @@ div.project-two div.project-title {
     grid-template-columns: repeat(3, 1fr);
 }
 
-div.project-two div.project-title div.project-two-title-wrapper {
+div.project-two-title-wrapper {
     grid-column: 1 / span 3;
 }
 
@@ -543,6 +543,10 @@ div.service-description h4 {
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 24px;
+}
+
+div.mobile-services {
+    display: none;
 }
 
 
@@ -809,6 +813,10 @@ MEDIA QUERIES
     }
     div.hero-text h1 {
         font-size: 144px;
+        margin-bottom: 56px;
+    }
+    div.hero-text ul {
+        margin-bottom: 68px;
     }
     div.hero-text ul li {
         font-size: 32px;
@@ -878,24 +886,137 @@ MEDIA QUERIES
         font-size: 202px;
         bottom: -51px;
     }
+    div.project-two div.project-title {
+        grid-column: 1 / span 9;
+        border-bottom: none;
+        grid-template-columns: repeat(9, 1fr);
+    }
+    div.project-two-title-wrapper {
+        grid-column: 1 / span 4;
+    }
+    div.project-two-description {
+        grid-column: 6 / span 4;
+    }
+    div.project-two-video {
+        grid-column: 1 / span 9;
+    }
+    div.about-column-one,
+    div.about-column-two {
+        grid-column: 1 / span 7;
+    }
+    div.about-column-three {
+        grid-column: 8 / span 2;
+    }
+    div.modal h2 {
+        font-size: 40px;
+        margin-bottom: 24px;
+    }
+    textarea {
+        height: 120px;
+    }
 }
 
-@media(max-width: 1025px) {
+@media(max-width: 1050px) {
+    div.hero-text h1 {
+        font-size: 104px;
+        margin-bottom: 48px;
+    }
+    div.hero-text ul {
+        margin-bottom: 64px;
+    }
+    div.hero-text ul li {
+        font-size: 24px;
+    }
+    p.location-subtitle {
+        font-size: 16px;
+    }
+    div.logomark img {
+        max-width: 120px;
+    }
+    h2 {
+        font-size: 48px;
+    }
+    div.project-title h3 {
+        font-size: 40px;
+    }
+    div.about-text-container h3 {
+        font-size: 32px;
+    }
+    div.about-text-container h4 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 16px;
+    }
+    div.divider {
+        margin-bottom: 48px;
+    }
+    div.intro-text-container {
+        margin: 120px 0px 180px 0px;
+    }
+    div.intro-text {
+        font-size: 28px;
+    }
     div.work-section-intro h2::before {
         font-size: 152px;
-        bottom: -32px;
+        bottom: -38px;
     }
     div.services-section-intro h2::before {
         font-size: 152px;
-        bottom: -32px;
+        bottom: -38px;
     }
     div.about-section-intro h2::before {
         font-size: 152px;
-        bottom: -32px;
+        bottom: -38px;
     }
     div.contact-section-intro h2::before {
         font-size: 152px;
-        bottom: -32px;
+        bottom: -38px;
+    }
+    p.services-intro-text {
+        grid-column: 1 / span 7;
+        margin-bottom: 0;
+    }
+    div.mobile-services {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-column: 1 / span 9;
+    }
+    div.mobile-services-col-1 {
+        grid-column: 1 / span 4;
+    }
+    div.mobile-services-col-2 {
+        grid-column: 6 / span 4;
+    }
+    div.service-list {
+        display: none;
+    }
+    div.mobile-services h3 {
+        font-size: 28px;
+        font-weight: bold;
+        margin-top: 32px;
+    }
+    div.service-description-box {
+        display: none;
+    }
+    div.mobile-services h4 {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 12px;
+    }
+    div.project-two {
+        margin-bottom: 144px;
+    }
+    section.about {
+        padding: 0px 24px 144px 24px;
+    }
+    section.services {
+        padding: 0px 24px 144px 24px;
+    }
+    p.contact-intro {
+        grid-column: 1 / span 7;
+    }
+    form {
+        grid-column: 1 / span 7;
     }
 }
 
@@ -905,6 +1026,9 @@ MEDIA QUERIES
     }
     header.mobile-header {
         display: flex;
+    }
+    .image-divider-container {
+        margin-bottom: 180px;
     }
 }
 
@@ -925,23 +1049,138 @@ MEDIA QUERIES
         font-size: 120px;
         bottom: -20px;
     }
+    div.hero-text h1 {
+        font-size: 80px;
+        margin-bottom: 40px;
+    }
+    div.hero-text ul {
+        margin-bottom: 56px;
+    }
+    div.hero-text ul li {
+        font-size: 22px;
+    }
+    p.location-subtitle {
+        font-size: 16px;
+    }
+    div.logomark img {
+        max-width: 100px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    div.project-title {
+        grid-column: 1 / span 9;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    div.project-one-description {
+        grid-column: 1 / span 9;
+    }
+    div.project-two-title-wrapper {
+        grid-column: 1 / span 9;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    div.project-two-description {
+        grid-column: 1 / span 9;
+        margin-top: 16px;
+    }
+    div.project-title h3 {
+        font-size: 32px;
+    }
+    div.project-link {
+        font-size: 24px;
+    }
+    div.project-link img {
+        margin-left: 16px;
+    }
+    div.mobile-services-col-1 {
+        grid-column: 1 / span 9;
+    }
+    div.mobile-services-col-2 {
+        grid-column: 1 / span 9;
+    }
+    div.about-text-container h3 {
+        font-size: 24px;
+    }
+    div.about-text-container h4 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 16px;
+    }
+    div.about-column-one,
+    div.about-column-two {
+        grid-column: 1 / span 9;
+    }
+    div.about-column-three {
+        display: none;
+    }
+    div.divider {
+        margin-bottom: 40px;
+    }
+    div.intro-text-container {
+        margin: 104px 0px 132px 0px;
+    }
+    div.intro-text {
+        font-size: 22px;
+    }
 }
 
-@media(max-width: 550px) {
+@media(max-width: 600px) {
+    div.hero-text h1 {
+        font-size: 56px;
+        margin-bottom: 32px;
+    }
+    div.hero-text ul {
+        margin-bottom: 48px;
+    }
+    div.hero-text ul li {
+        font-size: 20px;
+    }
+    div.intro-text-container {
+        margin: 48px 0px 96px 0px;
+    }
     div.work-section-intro h2::before {
         font-size: 80px;
-        bottom: -7px;
+        bottom: -16px;
     }
     div.services-section-intro h2::before {
         font-size: 80px;
-        bottom: -7px;
+        bottom: -16px;
     }
     div.about-section-intro h2::before {
         font-size: 80px;
-        bottom: -7px;
+        bottom: -16px;
     }
     div.contact-section-intro h2::before {
         font-size: 80px;
-        bottom: -7px;
+        bottom: -16px;
+    }
+    p.services-intro-text {
+        grid-column: 1 / span 9;
+    }
+    p.contact-intro {
+        grid-column: 1 / span 9;
+    }
+    form {
+        grid-column: 1 / span 9;
+    }
+}
+
+@media(max-width: 430px) {
+    div.hero-text {
+        grid-column: 1 / span 6;
+    }
+    div.hero-text h1 {
+        font-size: 48px;
+        margin-bottom: 56px;
+    }
+    div.intro-text-container {
+        margin: 32px 0px 64px 0px;
+    }
+    div.intro-text {
+        grid-column: 1 / span 9;
     }
 }
