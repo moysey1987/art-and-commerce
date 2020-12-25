@@ -450,7 +450,7 @@ div.service-list {
     z-index: 2;
 }
 
-div.service-list h4 {
+div.service h3 {
     font-size: 41px;
     font-weight: bold;
     display: inline-block;
@@ -485,7 +485,7 @@ div.service-description {
     transition: opacity 0.25s ease;
 }
 
-div.service-description h5 {
+div.service-description h4 {
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 24px;
