@@ -63,7 +63,8 @@ HEADER
 *****************************************
 */
 
-header {
+header.desktop-header,
+header.mobile-header {
     width: 100%;
     padding: 16px 24px;
     position: sticky;
@@ -73,16 +74,28 @@ header {
     background-color: var(--light);
 }
 
-header img {
+header.mobile-header {
+    display: none;
+}
+
+header.desktop-header img {
     height: 25px;
     width: 100%;
 }
 
-header nav {
+header.desktop-header nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+header.mobile-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
 }
 
 a {
@@ -108,6 +121,52 @@ a {
 .fancy-link:hover::after {
     transform: scaleX(1);
     transform-origin: left;
+}
+
+.mobile-header-logo {
+    max-width: 200px;
+    z-index: 11;
+}
+
+a.mobile-menu-toggle {
+    cursor: pointer;
+    z-index: 11;
+}
+
+nav.mobile-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 144px 24px;
+    background-color: var(--light);
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100%);
+    transition: transform 1s ease;
+}
+
+nav.mobile-nav a {
+    font-size: 67px;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+div.mobile-nav-image {
+    margin-top: 5vh;
+    background-image: url("/images/hero.webp");
+    background-size: cover;
+    height: 20vh;
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+body.nav-open .mobile-nav {
+    transform: translateX(0);
 }
 
 
@@ -693,4 +752,24 @@ div.modal img {
 
 div.modal img:hover {
     transform: rotate(270deg);
+}
+
+
+/*
+*****************************************
+*****************************************
+*****************************************
+MEDIA QUERIES
+*****************************************
+*****************************************
+*****************************************
+*/
+
+@media(max-width: 900px) {
+    header.desktop-header {
+        display: none;
+    }
+    header.mobile-header {
+        display: flex;
+    }
 }

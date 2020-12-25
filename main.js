@@ -18,6 +18,10 @@ const modalClose = document.querySelector("div.modal img")
 
 const growers = document.querySelectorAll("div.divider")
 
+const bodyTag = document.querySelector("body")
+const menuToggle = document.querySelector("a.mobile-menu-toggle")
+const mobileNavItems = document.querySelectorAll("nav.mobile-nav a")
+
 
 // PAGE LOAD ANIMATION
 
@@ -169,4 +173,40 @@ const growOnScroll = new IntersectionObserver(function(
 
 growers.forEach(grower => {
     growOnScroll.observe(grower)
+})
+
+// MOBILE MENU
+
+menuToggle.addEventListener("click", function() {
+    bodyTag.classList.toggle("nav-open")
+
+    if (bodyTag.classList.contains("nav-open")) {
+
+        gsap.to(".burger-top", { rotation: 45, transformOrigin: "50% 50%", y: 8 })
+        gsap.to(".burger-bottom", { rotation: -45, transformOrigin: "50% 50%", y: -8 })
+        gsap.to(".burger-mid", { width: "0" })
+    } else {
+
+        gsap.to(".burger-top", { rotation: 0, y: 0 })
+        gsap.to(".burger-bottom", { rotation: 0, y: 0 })
+        gsap.to(".burger-mid", { width: 28 })
+    }
+})
+
+// Prevent default link behaviour on mobile menu toggle
+menuToggle.addEventListener('click', event => {
+    event.preventDefault
+})
+
+
+// Close mobile menu when item selected
+
+mobileNavItems.forEach(item => {
+    item.addEventListener('click', event => {
+        bodyTag.classList.toggle("nav-open")
+
+        gsap.to(".burger-top", { rotation: 0, y: 0 })
+        gsap.to(".burger-bottom", { rotation: 0, y: 0 })
+        gsap.to(".burger-mid", { width: 28 })
+    })
 })

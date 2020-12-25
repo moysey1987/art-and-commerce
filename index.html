@@ -31,13 +31,33 @@ HEADER
 *****************************************
 -->
 
-    <header>
+    <header class="desktop-header">
         <nav>
             <a href="#work" class="fancy-link">work</a>
             <a href="#services" class="fancy-link">services</a>
             <a href="#top"><img src="/images/logo.svg" alt="back to top"></a>
             <a href="#about" class="fancy-link">about</a>
             <a class="button contact-button" href="#">contact</a>
+        </nav>
+    </header>
+    <header class="mobile-header">
+        <a class="mobile-menu-toggle">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="6" y="10" width="28" height="4" fill="black" class="burger-top"/>
+<rect x="6" y="18" width="28" height="4" fill="black" class="burger-mid"/>
+<rect x="6" y="26" width="28" height="4" fill="black" class="burger-bottom"/>
+</svg>
+        </a>
+        <a href="#top" class="mobile-header-logo"><img src="/images/logo.svg" alt="back to top"></a>
+
+        <a class="button contact-button" href="#">contact</a>
+
+
+        <nav class="mobile-nav">
+            <a href="#work" class="mobile-menu-link">work</a>
+            <a href="#services" class="mobile-menu-link">services</a>
+            <a href="#about">about</a>
+            <div class="mobile-nav-image"></div>
         </nav>
     </header>
 
