@@ -13,6 +13,7 @@ const serviceFourTag = document.querySelector("div.service-four")
 const serviceFourDescription = document.querySelector("div.s4-description")
 
 const contactButton = document.querySelector("a.contact-button")
+const mobileContactButton = document.querySelector("a.mobile-contact")
 const modalContainer = document.querySelector("div.modal-container")
 const modalClose = document.querySelector("div.modal img")
 
@@ -143,6 +144,11 @@ serviceFourTag.addEventListener("mouseleave", function() {
 // MODAL LAUNCHER
 
 contactButton.addEventListener("click", function() {
+    modalContainer.style.opacity = "1"
+    modalContainer.style.pointerEvents = "auto"
+})
+
+mobileContactButton.addEventListener("click", function() {
     modalContainer.style.opacity = "1"
     modalContainer.style.pointerEvents = "auto"
 })

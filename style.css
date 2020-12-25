@@ -735,6 +735,7 @@ div.modal {
     padding: 32px;
     background-color: var(--light);
     position: relative;
+    overflow: scroll;
 }
 
 div.modal img {
