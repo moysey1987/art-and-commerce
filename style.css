@@ -159,10 +159,6 @@ div.mobile-nav-image {
     background-size: cover;
     height: 20vh;
     width: 100%;
-    padding: 16px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
 }
 
 body.nav-open .mobile-nav {
@@ -218,7 +214,7 @@ HERO
 
 section.hero {
     margin: 32px 0px 112px 0px;
-    padding: 0px 24px;
+    padding: 32px 24px;
     max-height: 800px;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
@@ -227,7 +223,6 @@ section.hero {
 }
 
 div.hero-text {
-    padding: 32px 0px;
     grid-column: 1 / span 4;
     grid-row: 1;
     z-index: 2;
@@ -399,7 +394,7 @@ div.project-two {
 }
 
 div.project-title {
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 4;
 }
 
 div.project-title h3 {
@@ -410,7 +405,7 @@ div.project-title h3 {
 
 div.project-link {
     font-size: 41px;
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 3;
 }
 
 div.project-link a {
@@ -420,7 +415,7 @@ div.project-link a {
 
 div.project-link img {
     margin-left: 40px;
-    max-height: 40px;
+    max-height: 32px;
 }
 
 div.project-one-description {
@@ -765,11 +760,187 @@ MEDIA QUERIES
 *****************************************
 */
 
+@media(max-width: 1750px) {
+    div.hero-image-container {
+        grid-column: 3 / span 7;
+    }
+    div.intro-text {
+        grid-column: 1 / span 8;
+    }
+    div.project-one-description {
+        grid-column: 6 / span 4;
+    }
+    div.project-two-description {
+        grid-column: 1 / span 3;
+    }
+    p.services-intro-text {
+        grid-column: 1 / span 5;
+    }
+    div.service-list {
+        grid-column: 1 / span 4;
+    }
+    div.service-description-box {
+        grid-column: 6 / span 4;
+        position: relative;
+    }
+    div.about-column-one {
+        grid-column: 1 / span 5;
+    }
+    div.about-column-two {
+        grid-column: 1 / span 5;
+    }
+    div.about-column-three {
+        grid-column: 6 / span 4;
+        grid-row: 1 / span 2;
+    }
+    p.contact-intro {
+        grid-column: 1 / span 5;
+    }
+    form {
+        grid-column: 1 / span 5;
+    }
+}
+
+@media(max-width: 1440px) {
+    section.hero {
+        margin: 0px 0px 112px 0px;
+        padding: 16px 24px;
+    }
+    div.hero-text h1 {
+        font-size: 144px;
+    }
+    div.hero-text ul li {
+        font-size: 32px;
+    }
+    p.location-subtitle {
+        font-size: 18px;
+    }
+    div.logomark img {
+        max-width: 152px;
+    }
+    div.intro-text-container {
+        margin: 160px 0px 240px 0px;
+    }
+    div.intro-text {
+        font-size: 32px;
+    }
+    div.work-section-intro h2::before {
+        font-size: 250px;
+        bottom: -68px;
+    }
+    div.services-section-intro h2::before {
+        font-size: 250px;
+        bottom: -68px;
+    }
+    div.about-section-intro h2::before {
+        font-size: 250px;
+        bottom: -68px;
+    }
+    div.contact-section-intro h2::before {
+        font-size: 250px;
+        bottom: -68px;
+    }
+    div.project-title h3 {
+        font-size: 48px;
+    }
+    div.project-link {
+        font-size: 32px;
+    }
+    div.service h3 {
+        font-size: 32px;
+    }
+    div.service-description h4 {
+        font-size: 24px;
+    }
+    .image-divider-container {
+        margin-bottom: 240px;
+    }
+    section.about {
+        padding: 0px 24px 240px 24px;
+    }
+}
+
+@media(max-width: 1280px) {
+    div.work-section-intro h2::before {
+        font-size: 202px;
+        bottom: -51px;
+    }
+    div.services-section-intro h2::before {
+        font-size: 202px;
+        bottom: -51px;
+    }
+    div.about-section-intro h2::before {
+        font-size: 202px;
+        bottom: -51px;
+    }
+    div.contact-section-intro h2::before {
+        font-size: 202px;
+        bottom: -51px;
+    }
+}
+
+@media(max-width: 1025px) {
+    div.work-section-intro h2::before {
+        font-size: 152px;
+        bottom: -32px;
+    }
+    div.services-section-intro h2::before {
+        font-size: 152px;
+        bottom: -32px;
+    }
+    div.about-section-intro h2::before {
+        font-size: 152px;
+        bottom: -32px;
+    }
+    div.contact-section-intro h2::before {
+        font-size: 152px;
+        bottom: -32px;
+    }
+}
+
 @media(max-width: 900px) {
     header.desktop-header {
         display: none;
     }
     header.mobile-header {
         display: flex;
+    }
+}
+
+@media(max-width: 770px) {
+    div.work-section-intro h2::before {
+        font-size: 120px;
+        bottom: -20px;
+    }
+    div.services-section-intro h2::before {
+        font-size: 120px;
+        bottom: -20px;
+    }
+    div.about-section-intro h2::before {
+        font-size: 120px;
+        bottom: -20px;
+    }
+    div.contact-section-intro h2::before {
+        font-size: 120px;
+        bottom: -20px;
+    }
+}
+
+@media(max-width: 550px) {
+    div.work-section-intro h2::before {
+        font-size: 80px;
+        bottom: -7px;
+    }
+    div.services-section-intro h2::before {
+        font-size: 80px;
+        bottom: -7px;
+    }
+    div.about-section-intro h2::before {
+        font-size: 80px;
+        bottom: -7px;
+    }
+    div.contact-section-intro h2::before {
+        font-size: 80px;
+        bottom: -7px;
     }
 }
