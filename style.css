@@ -1274,6 +1274,9 @@ MEDIA QUERIES
         justify-content: space-between;
         align-items: flex-start;
     }
+    div.project-link img {
+        max-height: 24px;
+    }
     section.services {
         padding: 0px 8px 64px 8px;
     }
