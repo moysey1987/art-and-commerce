@@ -813,7 +813,7 @@ MEDIA QUERIES
     }
     header.desktop-header,
     header.mobile-header {
-        padding: 8px 24px;
+        padding: 16px 24px;
     }
     section.hero {
         margin: 0px 0px 112px 0px;
@@ -879,6 +879,7 @@ MEDIA QUERIES
         font-size: 24px;
     }
     .image-divider-container {
+        height: 200px;
         margin-bottom: 184px;
     }
     section.services {
