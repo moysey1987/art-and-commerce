@@ -1234,6 +1234,9 @@ MEDIA QUERIES
     div.intro-text {
         font-size: 22px;
     }
+    textarea {
+        height: 80px;
+    }
 }
 
 @media(max-width: 600px) {
