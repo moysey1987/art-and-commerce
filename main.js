@@ -105,7 +105,7 @@ parallaxDividers.forEach(divider => {
     window.addEventListener("scroll", function() {
         let offset = window.pageYOffset
 
-        divider.style.backgroundPositionY = offset * 0.3 + "px"
+        divider.style.backgroundPositionY = offset * 0.12 + "px"
     })
 
 })
