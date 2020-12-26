@@ -605,7 +605,7 @@ div.about-text-container p.quote {
 }
 
 div.about-text-container p.author {
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 9;
     grid-row: 2;
     margin-bottom: 48px;
 }
@@ -890,6 +890,10 @@ MEDIA QUERIES
     }
     p.location-subtitle {
         font-size: 18px;
+    }
+    div.logomark {
+        bottom: 32px;
+        right: 40px
     }
     div.logomark img {
         max-width: 152px;
@@ -1264,6 +1268,7 @@ MEDIA QUERIES
     div.about-column-one,
     div.about-column-two {
         grid-column: 1 / span 9;
+        margin-right: 0px;
     }
     div.about-column-three {
         display: none;
@@ -1347,6 +1352,7 @@ MEDIA QUERIES
     }
     div.logomark {
         bottom: 32px;
+        right: 16px;
     }
     div.intro-text-container {
         margin: 32px 0px 64px 0px;
