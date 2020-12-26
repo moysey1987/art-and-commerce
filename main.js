@@ -216,3 +216,13 @@ mobileNavItems.forEach(item => {
         gsap.to(".burger-mid", { width: 28 })
     })
 })
+
+// CONTENT ACCORDIONS
+
+const accordionItems = document.querySelectorAll("div.accordion-item")
+
+accordionItems.forEach(item => {
+    item.addEventListener('click', function() {
+        this.classList.toggle('active')
+    })
+})
