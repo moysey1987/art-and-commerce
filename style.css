@@ -145,21 +145,20 @@ nav.mobile-nav {
     background-color: var(--light);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     transform: translateX(-100%);
     transition: transform 0.5s ease;
 }
 
 div.mobile-nav-row-1,
 div.mobile-nav-row-2 {
-    height: 48%;
+    height: 45%;
 }
 
 div.mobile-nav-row-1 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     border-top: 2px solid var(--dark);
+    margin-bottom: 3%;
 }
 
 div.mobile-nav-image {
@@ -336,7 +335,6 @@ div.intro-text {
 
 b {
     font-weight: 800;
-    text-transform: uppercase;
 }
 
 
@@ -597,16 +595,36 @@ div.about-text-container {
     gap: 16px;
 }
 
+div.about-text-container p.quote {
+    grid-column: 1 / span 5;
+    grid-row: 1;
+    margin-bottom: 8px;
+    font-style: italic;
+    line-height: 1.7;
+    font-size: 28px;
+}
+
+div.about-text-container p.author {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    margin-bottom: 48px;
+}
+
 div.about-column-one {
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 3;
+    padding-right: 48px;
+    grid-row: 3;
 }
 
 div.about-column-two {
-    grid-column: 4 / span 2;
+    grid-column: 4 / span 3;
+    padding-right: 48px;
+    grid-row: 3;
 }
 
 div.about-column-three {
     grid-column: 7 / span 3;
+    grid-row: span 4;
 }
 
 div.about-image {
@@ -823,15 +841,22 @@ MEDIA QUERIES
         grid-column: 6 / span 4;
         position: relative;
     }
+    div.about-text-container p.author {
+        margin-bottom: 32px;
+    }
     div.about-column-one {
         grid-column: 1 / span 5;
+        padding-right: 0px;
+        grid-row: 3;
     }
     div.about-column-two {
         grid-column: 1 / span 5;
+        padding-right: 0px;
+        grid-row: 4;
     }
     div.about-column-three {
-        grid-column: 6 / span 4;
-        grid-row: 1 / span 2;
+        grid-column: 7 / span 3;
+        grid-row: span 5;
     }
     p.contact-intro {
         grid-column: 1 / span 5;
@@ -955,9 +980,13 @@ MEDIA QUERIES
     div.project-two-video {
         grid-column: 1 / span 9;
     }
+    div.about-text-container p.quote {
+        grid-column: 1 / span 7;
+    }
     div.about-column-one,
     div.about-column-two {
         grid-column: 1 / span 7;
+        margin-right: 64px;
     }
     div.about-column-three {
         grid-column: 8 / span 2;
@@ -1062,6 +1091,7 @@ MEDIA QUERIES
         display: flex;
         justify-content: space-between;
         align-items: center;
+        transition: 0.5s ease;
     }
     div.accordion:last-child {
         border-bottom: 10px solid var(--dark);
@@ -1100,7 +1130,7 @@ MEDIA QUERIES
         fill: var(--light);
     }
     div.accordion-item.active div.accordion-content {
-        max-height: 500px;
+        max-height: 400px;
     }
     div.accordion-item.active div.accordion-label::before {
         transform: rotate(135deg);
@@ -1226,6 +1256,10 @@ MEDIA QUERIES
         font-size: 20px;
         font-weight: 600;
         margin-bottom: 16px;
+    }
+    div.about-text-container p.quote {
+        font-size: 22px;
+        grid-column: 1 / span 9;
     }
     div.about-column-one,
     div.about-column-two {
