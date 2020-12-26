@@ -640,6 +640,7 @@ textarea {
     border: 1px solid var(--dark);
     padding: 8px 16px;
     margin-bottom: 32px;
+    border-radius: 0;
 }
 
 textarea {
@@ -807,6 +808,13 @@ MEDIA QUERIES
 }
 
 @media(max-width: 1440px) {
+    a.button {
+        padding: 8px 24px;
+    }
+    header.desktop-header,
+    header.mobile-header {
+        padding: 8px 24px;
+    }
     section.hero {
         margin: 0px 0px 112px 0px;
         padding: 16px 24px;
@@ -849,11 +857,20 @@ MEDIA QUERIES
         font-size: 250px;
         bottom: -68px;
     }
+    div.divider {
+        margin-bottom: 40px;
+    }
     div.project-title h3 {
         font-size: 48px;
     }
     div.project-link {
         font-size: 32px;
+    }
+    div.project-one-video {
+        margin: 32px 0 64px 0;
+    }
+    div.project-two {
+        margin-bottom: 64px;
     }
     div.service h3 {
         font-size: 32px;
@@ -862,7 +879,10 @@ MEDIA QUERIES
         font-size: 24px;
     }
     .image-divider-container {
-        margin-bottom: 240px;
+        margin-bottom: 184px;
+    }
+    section.services {
+        padding: 0px 24px 112px 24px;
     }
     section.about {
         padding: 0px 24px 240px 24px;
