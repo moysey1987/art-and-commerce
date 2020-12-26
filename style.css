@@ -1318,4 +1318,7 @@ MEDIA QUERIES
         top: 16px;
         right: 16px;
     }
+    button {
+        padding: 8px 24px;
+    }
 }
