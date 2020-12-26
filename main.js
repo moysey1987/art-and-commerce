@@ -59,7 +59,7 @@ anime.timeline()
     });
 
 TweenMax.to(".loader-wrapper", 1.5, {
-    top: "-120%",
+    top: "-140%",
     ease: Expo.easeInOut,
     delay: 1
 });
