@@ -812,11 +812,11 @@ MEDIA QUERIES
         padding: 16px 24px;
     }
     div.hero-text h1 {
-        font-size: 144px;
-        margin-bottom: 56px;
+        font-size: 128px;
+        margin-bottom: 40px;
     }
     div.hero-text ul {
-        margin-bottom: 68px;
+        margin-bottom: 32px;
     }
     div.hero-text ul li {
         font-size: 32px;
@@ -828,7 +828,7 @@ MEDIA QUERIES
         max-width: 152px;
     }
     div.intro-text-container {
-        margin: 160px 0px 240px 0px;
+        margin: 104px 0px 160px 0px;
     }
     div.intro-text {
         font-size: 32px;
