@@ -74,10 +74,6 @@ header.mobile-header {
     background-color: var(--light);
 }
 
-header.mobile-header {
-    display: none;
-}
-
 header.desktop-header img {
     height: 25px;
     width: 100%;
@@ -130,7 +126,7 @@ a {
 
 a.mobile-menu-toggle {
     width: 85px;
-    height: 24px;
+    height: 40px;
     cursor: pointer;
     z-index: 11;
 }
@@ -154,11 +150,16 @@ div.mobile-nav-row-2 {
     height: 40%;
 }
 
+div.mobile-nav-row-2 img.nav-logo {
+    width: 100%;
+    margin-top: 16px;
+}
+
 div.mobile-nav-row-1 {
     display: flex;
     flex-direction: column;
-    border-top: 2px solid var(--dark);
     margin-bottom: 5%;
+    padding: 24px 0 0 0;
 }
 
 div.mobile-nav-image {
@@ -172,7 +173,7 @@ div.mobile-nav-image img {
 }
 
 nav.mobile-nav a {
-    font-size: 8vh;
+    font-size: 6vh;
     font-weight: bold;
     margin-bottom: 3px;
 }
@@ -1337,7 +1338,7 @@ MEDIA QUERIES
 
 @media(max-width: 500px) {
     header.mobile-header {
-        padding: 16px 8px;
+        padding: 8px 8px;
     }
     section.hero {
         margin: 0px 0px 48px 0px;
