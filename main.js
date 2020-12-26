@@ -58,8 +58,8 @@ anime.timeline()
         delay: 2500
     });
 
-TweenMax.to(".loader-wrapper", 1.5, {
-    top: "-140%",
+TweenMax.to(".loader-wrapper", 1.75, {
+    top: "-150%",
     ease: Expo.easeInOut,
     delay: 1
 });
