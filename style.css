@@ -1295,6 +1295,9 @@ MEDIA QUERIES
     div.modal-container {
         padding: 8px;
     }
+    div.modal {
+        padding: 16px;
+    }
     div.modal h2 {
         font-size: 24px;
         margin-bottom: 16px;
@@ -1309,5 +1312,10 @@ MEDIA QUERIES
     input,
     textarea {
         margin-bottom: 16px;
+    }
+    div.modal img {
+        max-width: 24px;
+        top: 16px;
+        right: 16px;
     }
 }
