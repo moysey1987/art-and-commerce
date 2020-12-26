@@ -1300,6 +1300,9 @@ MEDIA QUERIES
         font-size: 48px;
         margin-bottom: 56px;
     }
+    div.logomark {
+        bottom: 32px;
+    }
     div.intro-text-container {
         margin: 32px 0px 64px 0px;
         padding: 0px 8px;
