@@ -1354,7 +1354,8 @@ MEDIA QUERIES
         font-size: 18px;
     }
     div.modal-container {
-        padding: 8px;
+        padding: 32px 8px;
+        align-items: flex-start;
     }
     div.modal {
         padding: 16px;
