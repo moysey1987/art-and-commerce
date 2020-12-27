@@ -143,9 +143,13 @@ nav.mobile-nav {
     flex-direction: column;
     transform: translateX(-100%);
     transition: transform 0.5s ease;
+    border-right: 2px solid var(--dark);
 }
 
-div.mobile-nav-row-1,
+div.mobile-nav-row-1 {
+    height: 30%;
+}
+
 div.mobile-nav-row-2 {
     height: 40%;
 }
@@ -158,7 +162,7 @@ div.mobile-nav-row-2 img.nav-logo {
 div.mobile-nav-row-1 {
     display: flex;
     flex-direction: column;
-    margin-bottom: 5%;
+    margin-bottom: 8vh;
     padding: 24px 0 0 0;
 }
 
@@ -173,9 +177,9 @@ div.mobile-nav-image img {
 }
 
 nav.mobile-nav a {
-    font-size: 6vh;
+    font-size: 5vh;
     font-weight: bold;
-    margin-bottom: 3px;
+    margin-bottom: 8px;
 }
 
 div.mobile-nav-image {
@@ -625,7 +629,7 @@ div.about-column-two {
 
 div.about-column-three {
     grid-column: 7 / span 3;
-    grid-row: span 4;
+    grid-row: 1 / span 5;
 }
 
 div.about-image {
@@ -857,7 +861,6 @@ MEDIA QUERIES
     }
     div.about-column-three {
         grid-column: 7 / span 3;
-        grid-row: span 5;
     }
     p.contact-intro {
         grid-column: 1 / span 5;
@@ -1135,7 +1138,7 @@ MEDIA QUERIES
         fill: var(--light);
     }
     div.accordion-item.active div.accordion-content {
-        max-height: 400px;
+        max-height: 550px;
     }
     div.accordion-item.active div.accordion-label::before {
         transform: rotate(135deg);
