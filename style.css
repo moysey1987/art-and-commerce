@@ -18,6 +18,11 @@ p {
     margin-bottom: 16px;
 }
 
+img {
+    height: auto;
+    width: 100%;
+}
+
 ::-webkit-scrollbar {
     width: 12px;
     background-image: linear-gradient(100deg, #ffffff, #DAB9DB, #5A9FDB, #E3AADF, #ffffff);
@@ -553,6 +558,7 @@ div.service {
 }
 
 div.service img {
+    max-width: 53px;
     transition: transform 0.25s ease;
 }
 
