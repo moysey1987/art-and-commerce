@@ -37,7 +37,9 @@ LOADING SCREEN
 
 div.loader-wrapper {
     position: fixed;
-    width: 100%;
+    top: 0;
+    left: 0;
+    width: 100vw;
     height: 120vh;
     background-color: var(--dark);
     z-index: 51;
