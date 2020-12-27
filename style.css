@@ -800,6 +800,10 @@ div.modal {
     position: relative;
 }
 
+div.modal h2 {
+    margin-bottom: 0px;
+}
+
 div.modal img {
     position: absolute;
     top: 32px;
@@ -810,6 +814,11 @@ div.modal img {
 
 div.modal img:hover {
     transform: rotate(270deg);
+}
+
+div.modal form input,
+div.modal form textarea {
+    margin-bottom: 24px;
 }
 
 
