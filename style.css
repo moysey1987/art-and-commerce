@@ -33,6 +33,12 @@ img {
     border: 1px solid var(--dark20);
 }
 
+a#work {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+}
+
 
 /*
 *****************************************
@@ -339,6 +345,7 @@ div.intro-text-container {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     gap: 16px;
+    position: relative;
 }
 
 div.intro-text {
@@ -513,6 +520,13 @@ PARALLAX IMAGE DIVIDER
     background-size: cover;
     background-position: bottom center;
     margin-bottom: 352px;
+    position: relative;
+}
+
+.image-divider-container span {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
 }
 
 
