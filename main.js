@@ -143,12 +143,14 @@ serviceFourTag.addEventListener("mouseleave", function() {
 
 // MODAL LAUNCHER
 
-contactButton.addEventListener("click", function() {
+contactButton.addEventListener("click", function(e) {
+    e.preventDefault()
     modalContainer.style.opacity = "1"
     modalContainer.style.pointerEvents = "auto"
 })
 
-mobileContactButton.addEventListener("click", function() {
+mobileContactButton.addEventListener("click", function(e) {
+    e.preventDefault()
     modalContainer.style.opacity = "1"
     modalContainer.style.pointerEvents = "auto"
 })
