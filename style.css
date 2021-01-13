@@ -187,7 +187,7 @@ div.mobile-nav-image {
 
 div.mobile-nav-image img {
     fill: var(--light);
-    max-width: 70%;
+    max-height: 70%;
 }
 
 nav.mobile-nav a {
