@@ -771,6 +771,31 @@ FOOTER
 *****************************************
 */
 
+div.ac {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 16px 24px;
+    border: solid 1px var(--dark);
+}
+
+div.ac-text-left,
+div.ac-text-right {
+    max-width: 1200px;
+}
+
+div.ac-text-left p,
+div.ac-text-right p {
+    margin: 0;
+}
+
+
+/*
+*****************************************
+FOOTER
+*****************************************
+*/
+
 footer {
     padding: 48px 24px;
     background-image: url("/images/footer.webp");
@@ -901,6 +926,12 @@ MEDIA QUERIES
     }
     form {
         grid-column: 1 / span 5;
+    }
+    div.ac {
+        flex-direction: column;
+    }
+    div.ac-text-left {
+        margin-bottom: 16px;
     }
 }
 
