@@ -197,7 +197,7 @@ nav.mobile-nav a {
 }
 
 div.mobile-nav-image {
-    background-image: url("/images/hero.webp");
+    background-image: url("images/hero.webp");
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -315,7 +315,7 @@ div.box {
 div.hero-image {
     width: 100%;
     height: 100%;
-    background-image: url("/images/hero.webp");
+    background-image: url("images/hero.webp");
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 5;
@@ -516,7 +516,7 @@ PARALLAX IMAGE DIVIDER
 .image-divider-container {
     height: 280px;
     width: 100%;
-    background-image: url("/images/background.webp");
+    background-image: url("images/background.webp");
     background-size: cover;
     background-position: bottom center;
     margin-bottom: 352px;
@@ -659,7 +659,7 @@ div.about-column-three {
 div.about-image {
     width: 100%;
     height: 100%;
-    background-image: url("/images/background.webp");
+    background-image: url("images/background.webp");
     background-size: cover;
 }
 
@@ -798,7 +798,7 @@ FOOTER
 
 footer {
     padding: 48px 24px;
-    background-image: url("/images/footer.webp");
+    background-image: url("images/footer.webp");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -1465,7 +1465,7 @@ MEDIA QUERIES
         padding: 32px 0 8px 0;
     }
     div.image-divider-container {
-        background-image: url("/images/mob-parallax-bg.webp");
+        background-image: url("images/mob-parallax-bg.webp");
     }
     section.services {
         padding: 0px 8px 64px 8px;
